@@ -11,7 +11,7 @@ public class SimpleTest {
     }
 
     @Test
-    void simpleTest() {
+    void secondTest() {
         Assertions.assertTrue(false);
     }
 }
