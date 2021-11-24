@@ -7,6 +7,11 @@ public class SimpleTest {
 
     @Test
     void simpleTest() {
-        Assertions.assertTrue(true);
+        Assertions.assertTrue(false);
+    }
+
+    @Test
+    void secondTest() {
+        Assertions.assertTrue(false);
     }
 }
