@@ -1,17 +1,15 @@
-package com.github.belovaoa.pages;
+package tests;
 
 import com.codeborne.selenide.SelenideElement;
-import com.github.belovaoa.pages.components.CalendarComponent;
+import com.github.belovaoa.pages.componentsOfCalender.CalendarComponent;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
-import static com.github.belovaoa.pages.TestData.*;
 
 public class RegistrationForm {
 
-    // locators or elements
     private final String FORM_TITLE = "Student Registration Form";
     private SelenideElement
             formTitle = $(".practice-form-wrapper"),
@@ -31,21 +29,21 @@ public class RegistrationForm {
     public CalendarComponent calendar = new CalendarComponent();
 
     public void openPage() {
-        open("https://demoqa.com/automation-practice-form");
-        formTitle.shouldHave(text(FORM_TITLE));
+            open("https://demoqa.com/automation-practice-form");
+            formTitle.shouldHave(text(FORM_TITLE));
     }
 
-    public RegistrationForm inputFirstName() {
+    public RegistrationForm inputFirstName(String nameStudent) {
         firstNameInput.setValue(nameStudent);
         return this;
     }
 
-    public RegistrationForm inputLastName() {
+    public RegistrationForm inputLastName(String lastName) {
         lastNameInput.setValue(lastName);
         return this;
     }
 
-    public RegistrationForm inputEmail() {
+    public RegistrationForm inputEmail(String emailStudent) {
         emailInput.setValue(emailStudent);
         return this;
     }
@@ -55,7 +53,7 @@ public class RegistrationForm {
         return this;
     }
 
-    public RegistrationForm inputMobileNumber() {
+    public RegistrationForm inputMobileNumber(String phoneNumber) {
         mobileNumberInput.setValue(phoneNumber);
         return this;
     }
@@ -70,7 +68,7 @@ public class RegistrationForm {
         return this;
     }
 
-    public RegistrationForm inputAddress() {
+    public RegistrationForm inputAddress(String addressStudent) {
         addressInput.setValue(addressStudent);
         return this;
     }

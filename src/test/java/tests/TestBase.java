@@ -1,8 +1,9 @@
 package tests;
 
 import com.codeborne.selenide.Configuration;
-import com.github.belovaoa.pages.RegistrationForm;
 import org.junit.jupiter.api.BeforeAll;
+
+import java.util.Locale;
 
 public class TestBase {
 
