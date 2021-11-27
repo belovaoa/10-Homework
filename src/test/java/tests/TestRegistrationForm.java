@@ -1,4 +1,4 @@
-package com.github.belovaoa.pages;
+package tests;
 
 import org.junit.jupiter.api.Test;
 

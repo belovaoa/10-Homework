@@ -1,6 +1,7 @@
-package com.github.belovaoa.pages;
+package tests;
 
 import com.codeborne.selenide.Configuration;
+import com.github.belovaoa.pages.RegistrationForm;
 import org.junit.jupiter.api.BeforeAll;
 
 public class TestBase {
