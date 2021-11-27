@@ -63,7 +63,11 @@ public class TestRegistrationForm extends TestBase {
         registrationForm.submit();
         });
 
+        step("Проверяем название Thanks for submitting the form", () -> {
         registrationForm.verificationPopupName("Thanks for submitting the form");
+        });
+
+        step("Проверяем поля", () -> {
         registrationForm.checkResultsValue("Student Name", "Olga List")
                         .checkResultsValue("Student Email", "email@ya.ru")
                         .checkResultsValue("Gender", "Female")
@@ -74,5 +78,6 @@ public class TestRegistrationForm extends TestBase {
                         .checkResultsValue("Picture", "image.jpg")
                         .checkResultsValue("Address", "Ленина 15-22")
                         .checkResultsValue("State and City", "NCR Delhi");
+        });
     }
 }
