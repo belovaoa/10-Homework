@@ -1,4 +1,4 @@
-package tests;
+package tests.demoqa;
 
 import com.codeborne.selenide.SelenideElement;
 import helpers.componentsOfCalenderAndAttach.CalendarComponent;
