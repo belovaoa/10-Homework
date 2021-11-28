@@ -1,4 +1,4 @@
-package com.github.belovaoa.pages.componentsOfCalender;
+package helpers.componentsOfCalenderAndAttach;
 
 import com.codeborne.selenide.SelenideElement;
 

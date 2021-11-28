@@ -1,7 +1,7 @@
 package tests;
 
 import com.codeborne.selenide.SelenideElement;
-import com.github.belovaoa.pages.componentsOfCalender.CalendarComponent;
+import helpers.componentsOfCalenderAndAttach.CalendarComponent;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;

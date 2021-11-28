@@ -1,4 +1,4 @@
-package com.github.belovaoa.pages;
+package helpers.componentsOfCalenderAndAttach;
 
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Attachment;
