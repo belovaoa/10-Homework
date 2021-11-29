@@ -69,6 +69,12 @@ task properties_tests(type: Test) {
     }
 }
 
+task new_test_14(type: Test) {
+    useJUnitPlatform {
+        includeTags "group14"
+    }
+}
+
 task many_tags_tests(type: Test) {
     useJUnitPlatform {
         includeTags "properties"
