@@ -10,6 +10,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import static java.lang.String.format;
+
 public class TestBase {
 
     RegistrationForm registrationForm = new RegistrationForm();
@@ -20,10 +22,10 @@ public class TestBase {
         CredentialsConfig credentials = ConfigFactory.create(CredentialsConfig.class);
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.startMaximized = true;
-        // Configuration.remote = format("");
-        // Configuration.remote = format("https://%s:%s@%s&quot;, credentials.login(), credentials.password(),
-        //System.getProperty("url")
-         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
+        Configuration.remote = format("https://%s:%s@%s",
+                credentials.login(), credentials.password(),
+                System.getProperty("Url"));
+         // Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
