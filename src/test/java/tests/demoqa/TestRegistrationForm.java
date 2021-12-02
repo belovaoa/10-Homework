@@ -1,9 +1,11 @@
-package tests;
+package tests.demoqa;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
+@Tag("properties")
 public class TestRegistrationForm extends TestBase {
     @Test
     void fillFormTest() {
